@@ -1,0 +1,19 @@
+<p>
+  <input type="number" [(ngModel)]="label" />
+  <button (click)="add()">Add</button>
+</p>
+<p>
+  <span>
+    <span>Attach </span>
+    <input #first type="number" />
+    <span> to </span>
+    <input #second type="number" />
+  </span>
+  <button (click)="test(first.value, second.value)">Make union</button>
+</p>
+<p>
+  <input #number type="number" />
+  <button (click)="find(number.value)">Find</button>
+  Found parent value: {{ foundValue || 'None' }}
+</p>
+<p>Set info: {{ set.info.json }}</p>
